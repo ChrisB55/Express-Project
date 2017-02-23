@@ -1,0 +1,21 @@
+{
+  "name": "express_temp",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "author": "Chris B",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.14.1",
+    "gulp": "^3.9.1",
+    "jscs": "^3.0.7",
+    "jshint": "^2.9.4"
+  },
+  "devDependencies": {
+    "nodemon": "^1.11.0"
+  }
+}
