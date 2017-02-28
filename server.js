@@ -1,16 +1,9 @@
-const express = require('express');
-const app = express();
+var express = require('express');
 
-app.get('/', (req, res) => {
-    res.send('Welcome to express');
-});
-app.get('/about', (req, res) => {
-    res.send('Welcome to About section');
-});
-app.get('/blog', (req, res)  => {
-    res.send('Welcome to Blog section');
-});
+var app = express();
 
-app.listen(3000, () => {
-    console.log('listening on 3000')
+app.use(express.static('public'));
+
+app.listen(3005, function () {
+  console.log('Till 3005, hold up');
 });
