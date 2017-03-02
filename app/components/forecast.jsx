@@ -1,8 +1,13 @@
 var React = require('react');
+var Form = require('Form');
+
 var Forecast = React.createClass ({
     render: function () {
     return (
-      <h3>Forecast </h3>
+      <div>
+        <h3>Forecast </h3>
+        <Form></Form>
+    </div>
     );
   }
 });
