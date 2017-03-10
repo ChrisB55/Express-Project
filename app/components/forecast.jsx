@@ -1,3 +1,5 @@
+
+
 var React = require('react');
 var WeatherForm = require('WeatherForm');
 var Message = require('Message');
@@ -30,7 +32,7 @@ var Forecast = React.createClass({
 
     function renderMessage () {
       if (isLoading) {
-        return <h3>Getting the weather...</h3>;
+        return <h3>Fetching weather...</h3>;
       } else if (temp && location) {
         return <Message temp={temp} location={location}/>;
       }
@@ -45,4 +47,6 @@ var Forecast = React.createClass({
     )
   }
 });
+
+
 module.exports = Forecast;
